@@ -1,0 +1,12 @@
+"SpaceAge2"
+{
+	"base"		"base"
+	"title"		"SpaceAge2"
+	"maps"		"^sa_|^sb_"
+	"menusystem"	"1"
+	
+	"settings"
+	{
+		
+	}
+}

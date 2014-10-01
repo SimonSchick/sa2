@@ -1,0 +1,17 @@
+local function pointInsidePoly(x, y, tbl)
+	local poly, currX, currY
+	local max = #tbl
+	for i = 1, max do
+		poly = tbl[i]
+		currX = poly.x
+		currY = poly.y
+		if(i == max) then
+			i = 0
+		end
+		cross = (tbl[i+1].x - currX)*(y - currY)-(tbl[i+1].y - currY)*(x - currX)
+		if(cross < 0) then
+			return false
+		end
+	end
+	return true
+end

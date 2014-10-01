@@ -1,0 +1,21 @@
+"Gamemode"
+ {
+ 	"name"		"SpaceAge2"
+ 	"version"	"1.0" 
+ 	"up_date"	"10/16/2010"
+ 
+ 	"author_name"	"Doridian"
+ 	"author_email"	"webmaster@spaceage.eu"
+ 	"author_url"	"http://www.spaceage.eu"
+ 
+ 	"info"		"SpaceAge is a space mining gamemode."
+ 	"icon" 	 	""
+ 	"hide"		"0"
+ 
+	"mappattern"
+	{
+		"1"	"^sb_"
+		"2"	"^sa_"
+	}
+  }
+ 

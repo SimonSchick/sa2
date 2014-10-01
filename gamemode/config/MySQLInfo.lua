@@ -1,0 +1,1 @@
+SA.Plugins.MySQL:SetConnectionData("localhost", "root", "", "spaceage", 3306)

@@ -1,0 +1,27 @@
+local PLUGIN = Plugin("GarryFix")
+
+local awfulThings = {
+	PopulateMenuBar = {
+		"NPCOptions_MenuBar",
+		"DisplayOptions_MenuBar"
+	},
+	PostDrawEffects = {
+		"RenderWidgets"
+	},
+	PlayerTick = {
+		"TickWidgets"
+	}
+}
+
+function PLUGIN:OnEnable()
+	for hookName, tbl in next, awfulThings do
+		for i = 1, #tbl do
+			hook.Remove(hookName, tbl[i])
+		end
+	end
+end
+
+function PLUGIN:OnDisable()
+end
+
+SA:RegisterPlugin(PLUGIN)
